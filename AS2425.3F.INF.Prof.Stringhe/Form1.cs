@@ -52,14 +52,41 @@ namespace AS2425._3F.INF.Prof.Stringhe
                     {
                         if (chkSearchCase.Checked == true)
                         {
-                            if (nomiCognomi[i].ToUpper().Contains(txtParametro.Text.ToUpper()))
-                                lstElenco.Items.Add($"Nome {nomiCognomi[i]} email {email[i]}");
+                            // case indipendent
+                            switch (cmbOpzioni.Text.ToUpper())
+                            {
+                                case "INIZIA PER":
+                                    if (nomiCognomi[i].ToUpper().StartsWith(txtParametro.Text.ToUpper()))
+                                        lstElenco.Items.Add($"Nome {nomiCognomi[i]} email {email[i]}");
+                                    break;
+                                case "FINISCE PER":
+                                    if (nomiCognomi[i].ToUpper().EndsWith(txtParametro.Text.ToUpper()))
+                                        lstElenco.Items.Add($"Nome {nomiCognomi[i]} email {email[i]}");
+                                    break;
+                                case "CONTIENE":
+                                    if (nomiCognomi[i].ToUpper().Contains(txtParametro.Text.ToUpper()))
+                                        lstElenco.Items.Add($"Nome {nomiCognomi[i]} email {email[i]}");
+                                    break;
+                            }
                         }
                         else
                         {
-
-                            if (nomiCognomi[i].Contains(txtParametro.Text))
-                                lstElenco.Items.Add($"Nome {nomiCognomi[i]} email {email[i]}");
+                            // case dipendent
+                            switch (cmbOpzioni.Text.ToUpper())
+                            {
+                                case "INIZIA PER":
+                                    if (nomiCognomi[i].StartsWith(txtParametro.Text))
+                                        lstElenco.Items.Add($"Nome {nomiCognomi[i]} email {email[i]}");
+                                    break;
+                                case "FINISCE PER":
+                                    if (nomiCognomi[i].EndsWith(txtParametro.Text))
+                                        lstElenco.Items.Add($"Nome {nomiCognomi[i]} email {email[i]}");
+                                    break;
+                                case "CONTIENE":
+                                    if (nomiCognomi[i].Contains(txtParametro.Text))
+                                        lstElenco.Items.Add($"Nome {nomiCognomi[i]} email {email[i]}");
+                                    break;
+                            }
                         }
                     }
                     break;

@@ -1,6 +1,6 @@
 ﻿namespace AS2425._3F.INF.Prof.Stringhe
 {
-    partial class Form1
+    partial class btnAggiungi
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,18 +28,160 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
+            txtNomeCognome = new TextBox();
+            label2 = new Label();
+            txtEmail = new TextBox();
+            groupBox1 = new GroupBox();
+            button1 = new Button();
+            cmbScelte = new ComboBox();
+            btnVisualizza = new Button();
+            lstElenco = new ListBox();
+            label3 = new Label();
+            txtParametro = new TextBox();
+            groupBox2 = new GroupBox();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
-            // Form1
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(23, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(129, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Nome e cognome";
+            // 
+            // txtNomeCognome
+            // 
+            txtNomeCognome.Location = new Point(172, 31);
+            txtNomeCognome.Name = "txtNomeCognome";
+            txtNomeCognome.Size = new Size(394, 27);
+            txtNomeCognome.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(23, 80);
+            label2.Name = "label2";
+            label2.Size = new Size(46, 20);
+            label2.TabIndex = 0;
+            label2.Text = "EMail";
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(172, 82);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(394, 27);
+            txtEmail.TabIndex = 1;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(txtEmail);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(txtNomeCognome);
+            groupBox1.Location = new Point(41, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(711, 171);
+            groupBox1.TabIndex = 2;
+            groupBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(293, 125);
+            button1.Name = "button1";
+            button1.Size = new Size(177, 29);
+            button1.TabIndex = 2;
+            button1.Text = "Aggiungi";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // cmbScelte
+            // 
+            cmbScelte.FormattingEnabled = true;
+            cmbScelte.Items.AddRange(new object[] { "Elenco contatti", "Elenco contatti contenenti il nome indicato", "Elenco contatti contenenti la email indicata" });
+            cmbScelte.Location = new Point(29, 22);
+            cmbScelte.Name = "cmbScelte";
+            cmbScelte.Size = new Size(535, 28);
+            cmbScelte.TabIndex = 3;
+            // 
+            // btnVisualizza
+            // 
+            btnVisualizza.Location = new Point(589, 19);
+            btnVisualizza.Name = "btnVisualizza";
+            btnVisualizza.Size = new Size(91, 34);
+            btnVisualizza.TabIndex = 4;
+            btnVisualizza.Text = "Visualizza";
+            btnVisualizza.UseVisualStyleBackColor = true;
+            // 
+            // lstElenco
+            // 
+            lstElenco.FormattingEnabled = true;
+            lstElenco.Location = new Point(30, 116);
+            lstElenco.Name = "lstElenco";
+            lstElenco.Size = new Size(650, 204);
+            lstElenco.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(31, 64);
+            label3.Name = "label3";
+            label3.Size = new Size(142, 20);
+            label3.TabIndex = 6;
+            label3.Text = "Parametro di ricerca";
+            // 
+            // txtParametro
+            // 
+            txtParametro.Location = new Point(183, 65);
+            txtParametro.Name = "txtParametro";
+            txtParametro.Size = new Size(497, 27);
+            txtParametro.TabIndex = 7;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(cmbScelte);
+            groupBox2.Controls.Add(txtParametro);
+            groupBox2.Controls.Add(btnVisualizza);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(lstElenco);
+            groupBox2.Location = new Point(41, 204);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(711, 337);
+            groupBox2.TabIndex = 8;
+            groupBox2.TabStop = false;
+            // 
+            // btnAggiungi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "Form1";
+            ClientSize = new Size(800, 566);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Name = "btnAggiungi";
             Text = "Prof;Lab DV 2.12;10/03/25; rubrica con gestione stringhe";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox txtNomeCognome;
+        private Label label2;
+        private TextBox txtEmail;
+        private GroupBox groupBox1;
+        private Button button1;
+        private ComboBox cmbScelte;
+        private Button btnVisualizza;
+        private ListBox lstElenco;
+        private Label label3;
+        private TextBox txtParametro;
+        private GroupBox groupBox2;
     }
 }

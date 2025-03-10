@@ -1,8 +1,8 @@
 namespace AS2425._3F.INF.Prof.Stringhe
 {
-    public partial class Form1 : Form
+    public partial class btnAggiungi : Form
     {
-        public Form1()
+        public btnAggiungi()
         {
             InitializeComponent();
         }

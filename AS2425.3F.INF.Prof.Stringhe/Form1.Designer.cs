@@ -98,6 +98,7 @@
             btnAggiungi.TabIndex = 2;
             btnAggiungi.Text = "Aggiungi";
             btnAggiungi.UseVisualStyleBackColor = true;
+            btnAggiungi.Click += btnAggiungi_Click;
             // 
             // cmbScelte
             // 

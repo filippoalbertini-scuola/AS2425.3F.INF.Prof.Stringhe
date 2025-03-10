@@ -40,6 +40,7 @@
             label3 = new Label();
             txtParametro = new TextBox();
             groupBox2 = new GroupBox();
+            cmbOpzioni = new ComboBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -137,11 +138,12 @@
             // 
             txtParametro.Location = new Point(183, 65);
             txtParametro.Name = "txtParametro";
-            txtParametro.Size = new Size(497, 27);
+            txtParametro.Size = new Size(329, 27);
             txtParametro.TabIndex = 7;
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(cmbOpzioni);
             groupBox2.Controls.Add(cmbScelte);
             groupBox2.Controls.Add(txtParametro);
             groupBox2.Controls.Add(btnVisualizza);
@@ -152,6 +154,15 @@
             groupBox2.Size = new Size(711, 337);
             groupBox2.TabIndex = 8;
             groupBox2.TabStop = false;
+            // 
+            // cmbOpzioni
+            // 
+            cmbOpzioni.FormattingEnabled = true;
+            cmbOpzioni.Items.AddRange(new object[] { "Inizia per", "Finisce per", "Contiene" });
+            cmbOpzioni.Location = new Point(540, 66);
+            cmbOpzioni.Name = "cmbOpzioni";
+            cmbOpzioni.Size = new Size(140, 28);
+            cmbOpzioni.TabIndex = 8;
             // 
             // btnAggiungi
             // 
@@ -183,5 +194,6 @@
         private Label label3;
         private TextBox txtParametro;
         private GroupBox groupBox2;
+        private ComboBox cmbOpzioni;
     }
 }

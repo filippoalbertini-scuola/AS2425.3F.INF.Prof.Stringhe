@@ -1,6 +1,6 @@
 ﻿namespace AS2425._3F.INF.Prof.Stringhe
 {
-    partial class btnAggiungi
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -33,7 +33,7 @@
             label2 = new Label();
             txtEmail = new TextBox();
             groupBox1 = new GroupBox();
-            button1 = new Button();
+            btnAggiungi = new Button();
             cmbScelte = new ComboBox();
             btnVisualizza = new Button();
             lstElenco = new ListBox();
@@ -79,7 +79,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(btnAggiungi);
             groupBox1.Controls.Add(txtEmail);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label2);
@@ -90,14 +90,14 @@
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             // 
-            // button1
+            // btnAggiungi
             // 
-            button1.Location = new Point(293, 125);
-            button1.Name = "button1";
-            button1.Size = new Size(177, 29);
-            button1.TabIndex = 2;
-            button1.Text = "Aggiungi";
-            button1.UseVisualStyleBackColor = true;
+            btnAggiungi.Location = new Point(293, 125);
+            btnAggiungi.Name = "btnAggiungi";
+            btnAggiungi.Size = new Size(177, 29);
+            btnAggiungi.TabIndex = 2;
+            btnAggiungi.Text = "Aggiungi";
+            btnAggiungi.UseVisualStyleBackColor = true;
             // 
             // cmbScelte
             // 
@@ -164,14 +164,14 @@
             cmbOpzioni.Size = new Size(140, 28);
             cmbOpzioni.TabIndex = 8;
             // 
-            // btnAggiungi
+            // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 566);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Name = "btnAggiungi";
+            Name = "Form1";
             Text = "Prof;Lab DV 2.12;10/03/25; rubrica con gestione stringhe";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -187,7 +187,7 @@
         private Label label2;
         private TextBox txtEmail;
         private GroupBox groupBox1;
-        private Button button1;
+        private Button btnAggiungi;
         private ComboBox cmbScelte;
         private Button btnVisualizza;
         private ListBox lstElenco;

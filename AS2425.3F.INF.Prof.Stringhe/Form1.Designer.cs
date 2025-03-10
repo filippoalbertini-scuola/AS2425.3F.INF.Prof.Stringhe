@@ -41,6 +41,7 @@
             txtParametro = new TextBox();
             groupBox2 = new GroupBox();
             cmbOpzioni = new ComboBox();
+            chkSearchCase = new CheckBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -117,6 +118,7 @@
             btnVisualizza.TabIndex = 4;
             btnVisualizza.Text = "Visualizza";
             btnVisualizza.UseVisualStyleBackColor = true;
+            btnVisualizza.Click += btnVisualizza_Click;
             // 
             // lstElenco
             // 
@@ -139,11 +141,12 @@
             // 
             txtParametro.Location = new Point(183, 65);
             txtParametro.Name = "txtParametro";
-            txtParametro.Size = new Size(329, 27);
+            txtParametro.Size = new Size(237, 27);
             txtParametro.TabIndex = 7;
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(chkSearchCase);
             groupBox2.Controls.Add(cmbOpzioni);
             groupBox2.Controls.Add(cmbScelte);
             groupBox2.Controls.Add(txtParametro);
@@ -160,10 +163,20 @@
             // 
             cmbOpzioni.FormattingEnabled = true;
             cmbOpzioni.Items.AddRange(new object[] { "Inizia per", "Finisce per", "Contiene" });
-            cmbOpzioni.Location = new Point(540, 66);
+            cmbOpzioni.Location = new Point(426, 65);
             cmbOpzioni.Name = "cmbOpzioni";
             cmbOpzioni.Size = new Size(140, 28);
             cmbOpzioni.TabIndex = 8;
+            // 
+            // chkSearchCase
+            // 
+            chkSearchCase.AutoSize = true;
+            chkSearchCase.Location = new Point(579, 69);
+            chkSearchCase.Name = "chkSearchCase";
+            chkSearchCase.Size = new Size(49, 24);
+            chkSearchCase.TabIndex = 9;
+            chkSearchCase.Text = "Aa";
+            chkSearchCase.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -196,5 +209,6 @@
         private TextBox txtParametro;
         private GroupBox groupBox2;
         private ComboBox cmbOpzioni;
+        private CheckBox chkSearchCase;
     }
 }
